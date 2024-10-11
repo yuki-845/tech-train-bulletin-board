@@ -5,7 +5,6 @@ import Header from "./header";
 const ThreadNew = () => {
   const [title, setTitle] = useState("");
   const navigate = useNavigate();
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -21,7 +20,6 @@ const ThreadNew = () => {
           }),
         }
       );
-
       if (response.ok) {
         navigate("/");
       } else {
@@ -31,7 +29,6 @@ const ThreadNew = () => {
       console.error("エラーが発生しました:", error);
     }
   };
-
   return (
     <div>
       <Header />
