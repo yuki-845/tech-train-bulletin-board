@@ -1,12 +1,13 @@
-import { useState } from 'react'
-
-import './App.css'
-
+import ThreadList from './ThreadList';
+import Header from './header';
+import './css/App.css'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <header></header>
+    <>
+    <Header />
+    <ThreadList />
+    </>
   )
 }
 
