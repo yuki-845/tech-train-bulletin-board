@@ -66,7 +66,6 @@ const ThreadDetail = () => {
       <ul>
         {posts.map((post) => (
           <li key={post.id}>
-            <h3>{post.title || "投稿"}</h3>
             <p>{post.content || post.post}</p>
           </li>
         ))}
